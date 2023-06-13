@@ -1,0 +1,118 @@
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>회원가입</title>
+        <style> /*메뉴 및 버튼 스타일*/
+            ul {
+                list-style: none;
+            }
+            .menulink{
+                text-decoration: none;
+                color:#333;
+            }
+            nav {
+                width:100%;
+                background: #fff;
+                font-size:0.9em;
+                border-bottom: 1px solid #fff;
+            }
+            nav > ul {
+                height: 20px;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                transition: height 0.4s;
+                overflow: hidden;
+            }
+            nav > ul > li {
+                display: inline-block;
+                vertical-align: top;
+            }
+            nav > ul > li > .menulink {
+                display: block;
+                padding: 0 80px;
+                        margin: 0 auto; 
+                color:#333;}
+            #box
+            {
+                margin: 0 auto;
+                height: 350px;
+                width: 350px;
+                background-color: aliceblue;
+                border: 3px solid black;
+            }
+
+            input[type=text],input[type=password],textarea
+            {
+                width: 90%;
+                padding: 6px 10px 6px;
+                margin: 10px 0;
+                display: inline-block;
+                border: 2px solid rgb(50, 16, 161);
+                border-radius: 4px;
+            }
+        </style>
+
+        <script> /*문자열 검사용 함수*/
+            function check()
+            {
+                var name = document.getElementById("name").value;
+                var pw = document.getElementById("pw").value;
+                var pwtest = document.getElementById("pwtest").value;
+                var email = document.getElementById("email").value;
+
+                if(pw != pwtest)
+                {
+                    alert("비밀번호가 일치하지 않습니다!");
+                }
+
+                else if(email.indexOf('@') == -1)
+                {
+                    alert("이메일 형식이 올바르지 않습니다!");
+                }
+                else
+                {
+                    alert("회원가입이 완료되었습니다.");
+                    window.location.href="MAIN.html";
+                }
+
+            }
+        </script>
+	</head>
+	<body>
+        <h1>사거리 탑 원주</h1><h4>(볼거리, 먹거리, 놀거리, 자랑거리)</h4> <!--제목-->
+          </ul><br>
+        <hr>
+        <div id="menu">
+            <div id="all">
+            <nav>
+                <ul class="new1"> 
+                    <li><a class="menulink" href="볼거리.html">볼거리</a></li>
+                    <li><a class="menulink" href="sometingeat.html">먹거리</a></li>
+                    <li><a class="menulink" href="testiframe1.html">놀거리</a></li>
+                    <li><a class="menulink" href="사거리탑원주_자랑거리_v3.html" target="_self">자랑거리</a></li>
+                    <li><a class="menulink" href="list.html">Q&A</a></li>
+                    <li><a class="menulink" href="MAIN.html">홈으로</a></li>
+                </ul>
+            </nav>  
+        </div>
+        <hr>
+        <br><br><br>
+        <h1 style="text-align: center;">회원가입</h1> <!--중앙 텍스트-->
+        <div id="box">
+            <form> <!--회원가입 상자-->
+                <label>이름(닉네임)</label><br>
+                <input type="text" id="name" placeholder="이름"><br>
+                <label>비밀번호</label><br>
+                <input type="password" id="pw" placeholder="비밀번호"><br>
+                <label>비밀번호 확인</label><br>
+                <input type="password" id="pwtest" placeholder="비밀번호 확인"><br>
+                <label>이메일</label><br>
+                <input type="text" id="email" placeholder="이메일주소"><br>
+                <input type="button" style="margin-left: 5px;" onclick="check()" value="가입"> <!--가입완료 및 검사 버튼-->
+                <a href="로그인 페이지_v2.html"><input type="button" onclick="" value="취소"></a> <!--로그인페이지로 돌아가는 버튼-->
+            </form>
+        </div>
+	</body>
+</html>

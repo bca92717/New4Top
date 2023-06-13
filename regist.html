@@ -1,0 +1,60 @@
+<html>
+ 
+ <head>
+
+    <title> 회원가입 </title>
+
+ </head>
+ <body>
+
+  <form method="post" action="">
+    
+        <table>
+    <caption><h2>회원가입</h2></caption>
+    <tr>
+        <td>닉네임</td>
+        <td><input type="text" name="name" maxlength="5"></td>
+    </tr>
+    <tr>
+        <td>아이디</td>
+        <td>
+            <input type="text" name="id" maxlength="10">
+            <input type="button" value="중복확인" onclick="">
+        </td>
+    </tr>
+    <tr>
+        <td>비밀번호</td>
+        <td>
+            <input type="password" name="pwd" maxlength="12">
+        </td>
+    </tr>
+    <tr>
+        <td>비밀번호 확인</td>
+        <td><input type="password" name="pwdCheck" maxlength="12"></td>
+    </tr>
+    <tr>
+        <td>이메일</td>
+        <td>
+            <input type="text" name="mailid">
+            <span>@</span>
+            <input type="text" name="email">
+            <select name="mailslc">
+                <option value="self" selected>직접입력</option>
+                <option value="na">naver.com</option>
+                <option value="gm">gmail.com</option>
+                <option value="da">daum.com</option>
+            </select>
+            <input type="button" value="이메일 중복확인" onclick="">
+        </td>
+    </tr>
+    </table>
+        
+        <a href="testmain.html" target="_self"><input type="button" value="가입취소"></a>
+
+        <a href="testmain.html" target="_self"><input type="button" value="회원가입" onclick=""></a>
+
+  </form>
+
+ </body>
+
+</html>

@@ -1,0 +1,49 @@
+  /*페이지 메뉴 스타일*/
+  .menu{
+    width: 90%;
+    color: white;
+    background-color: gray;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left:5%; 
+    margin-right:5%;
+    text-align : center;
+  }
+
+  td > a{
+    text-decoration-line: none;
+    color: white;
+  }
+
+  table{
+    font-size: 15px;
+  }
+
+  #ww_f130c119ec237{
+    float: right;
+  }
+
+  .rogin{
+    float: left;
+  }
+
+  ul, li {list-style:none;}
+
+  .t1{
+    width: 450px;
+    height: 0px;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 80px;
+    padding-top: 1px;
+  }
+  div1
+  {
+    text-align: left;
+  }
+  div>section>img
+  {
+    margin: 200px;
+  }
